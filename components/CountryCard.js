@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 
 export const CountryCard = ({ country }) => {
+    console.log('CountryCard')
     return (
         <>
             <li className='bg-white py-4 rounded' key={country.name}>
