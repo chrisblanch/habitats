@@ -2,11 +2,10 @@ import React from 'react'
 import Link from 'next/link'
 
 export const CountryCard = ({ country }) => {
-    console.log('CountryCard')
     return (
         <>
             <li className='bg-white py-4 rounded' key={country.name}>
-                <Link href={`/country/[slug]`} as={`country/${country.alpha3Code}`}>
+                <Link href={`/country/[slug]`} as={`/country/${country.alpha3Code}`}>
                     <a>
                         <div>
                             <img className='object-cover h-48 w-full rounded shadow-2xl' src={country.flag} alt={`Flag for ${country.name}`} />

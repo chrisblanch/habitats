@@ -4,7 +4,7 @@ import { CountryCard } from './CountryCard'
 
 
 export const CountryList = ({ searchedCountries }) => {
-    console.log('CountryList')
+    // console.log('CountryList')
     return (
         <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
             {
